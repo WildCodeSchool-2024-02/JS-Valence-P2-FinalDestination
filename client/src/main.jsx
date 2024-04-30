@@ -9,6 +9,7 @@ import DestinationsPage from "./pages/DestinationsPage";
 import ErrorPage from "./pages/ErrorPage";
 
 
+
 const router = createBrowserRouter([
   {
     element: <App />,

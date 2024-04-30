@@ -1,4 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Abril+Fatface&display=swap");
+
 .nav {
   display: flex;
   justify-content: space-between;
+}
+
+.nav ul,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+  color: black;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
 }

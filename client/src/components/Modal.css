@@ -1,0 +1,64 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: blueviolet;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+}
+h3 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.PopupTitle {
+  color: red;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-top: 2rem;
+}
+.PopupCall {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border-radius: 90%;
+  background-color: white;
+  color: black;
+}
+.close-button:hover {
+  color: rgba(40, 35, 35, 0.245);
+  background-color: white;
+}
+.PopupCall {
+  font-size: large;
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    padding: 15px;
+  }
+}

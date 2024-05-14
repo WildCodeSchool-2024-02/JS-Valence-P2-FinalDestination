@@ -1,0 +1,103 @@
+.main-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 15px 35px 0 35px;
+}
+
+h1 {
+  margin-right: 320px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.airplane-and-woman {
+  display: flex;
+  flex-direction: column;
+}
+
+.airplane {
+  height: 15em;
+  width: 15em;
+  margin-left: 300px;
+}
+
+.traveller-woman {
+  width: 25em;
+  height: auto;
+}
+
+.questions-and-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.question h2 {
+  color: #161313;
+  font-size: 1, 5rem;
+}
+
+button {
+  padding: 5px 20px;
+  border: none;
+  background-color: #1e3d6a;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin: 0.3em;
+}
+button:hover {
+  background-color: #194c94;
+}
+.Action {
+  margin: 8em 0em 0em 15em;
+  font-size: larger;
+}
+.Name,
+.Email {
+  border-radius: 5px;
+  padding: 0.4rem;
+}
+.Submit {
+  float: inline-end;
+  background-color: #cf4f33;
+  color: white;
+}
+.Submit:hover {
+  background-color: #b17f73;
+  color: #c0e80caf;
+}
+
+label {
+  margin-right: 20px;
+}
+@media screen and (max-width: 640px) {
+  .questionnaire {
+    margin: 1.5rem 1rem 1rem 1rem;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 1em;
+  }
+  h2 {
+    font-size: 16px;
+    display: flex;
+  }
+  .Action {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: center;
+    margin: 3em 0em 0em 10em;
+  }
+
+  .traveller-woman,
+  .airplane {
+    display: none;
+  }
+  label {
+    font-size: 0.8em;
+  }
+}

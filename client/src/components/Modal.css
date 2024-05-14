@@ -10,41 +10,57 @@
   align-items: center;
   z-index: 1000;
 }
-
-.modal-content {
-  background-color: blueviolet;
-  padding: 20px;
-  border-radius: 8px;
-  position: relative;
-  max-width: 500px;
-  width: 90%;
-}
-h3 {
-  color: white;
+form {
   display: flex;
   justify-content: center;
+  gap: 0.5em;
 }
+.modal-content {
+  background-color: #665ec1;
+  padding: 1.3em;
+  border-radius: 1.5em;
+  position: relative;
+  max-width: auto;
+  width: 65%;
+}
+h3 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
 .PopupTitle {
+  text-align: center;
   color: red;
+  font-size: 2rem;
   background-color: white;
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  padding: 0.5rem;
-  margin-top: 2rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  margin-top: 1.5rem;
 }
-.PopupCall {
-  color: white;
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
+
+.Name {
+  padding: 0.5rem;
+  width: 10em;
+}
+
+.Email {
+  padding: 0.5rem;
+  width: 15em;
+}
+.Submit {
+  padding: 0.5rem;
+  width: 8em;
 }
 .close-button {
   position: absolute;
+  border: none;
   top: 10px;
   right: 10px;
   cursor: pointer;
-  border-radius: 90%;
+  border-radius: 100%;
   background-color: white;
   color: black;
 }
@@ -53,12 +69,49 @@ h3 {
   background-color: white;
 }
 .PopupCall {
-  font-size: large;
+  font-size: 1.8rem;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .modal-content {
-    width: 95%;
-    padding: 15px;
+    padding: 1em;
+    height: 14em;
+    width: auto;
+    display: flex;
+    justify-items: center;
+  }
+  .PopupTitle {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem 0.5rem 0.5rem;
+    margin-top: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+  }
+  .PopupCall {
+    font-size: 1rem;
+    margin-top: 0rem;
+  }
+  .Name {
+    padding: 0.2rem;
+    width: 7em;
+  }
+  .Email {
+    padding: 0.2rem;
+    width: 11em;
+  }
+  .Submit {
+    display: flex;
+    justify-content: center;
+    padding: 0.35rem;
+    width: 6em;
+  }
+  .close-button {
+    border-radius: 100%;
   }
 }

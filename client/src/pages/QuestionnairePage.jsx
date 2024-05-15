@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./Questionnaire.css";
-import Modal from "./Modal";
+import "./QuestionnairePage.css";
+import Modal from "../components/Modal";
 
 function Questionnaire() {
   const [questions] = useState([
@@ -51,7 +51,7 @@ function Questionnaire() {
   };
 
   return (
-    <div>
+    <div className="PageQuestionnaire">
       <div className="questions-and-button">
         <div className="questionnaire">
           <h1>To see our suggestions, please answer all the questions :</h1>

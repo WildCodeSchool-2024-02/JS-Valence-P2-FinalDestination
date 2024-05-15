@@ -1,10 +1,10 @@
-body {
+.PageQuestionnaire {
   background-image: url(../assets/images/woman.png),
     url(../assets/images/airplane.png);
   background-repeat: no-repeat;
   background-position:
-    15% 130%,
-    25% 30%;
+    25% 90%,
+    0% 10%;
 
   background-size: 25%, 20%;
 }
@@ -74,8 +74,8 @@ label {
   }
 }
 
-@media screen and (max-width: 600px) {
-  body {
+@media screen and (max-width: 750px) {
+  .PageQuestionnaire {
     background-image: none;
     margin: 0;
     padding: 0;

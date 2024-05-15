@@ -1,0 +1,100 @@
+@import "../index.css";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Homepage {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/images/Vector.png");
+  background-position: initial;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Lettering {
+  position: absolute;
+  top: 200px;
+  width: 250px;
+}
+
+.Where {
+  background-color: #53a4d7;
+  font-size: 18px;
+  color: white;
+}
+
+.femaleAbuSimbel {
+  height: 400px;
+  width: 400px;
+}
+
+.Vaccation {
+  margin-top: 200px;
+  margin-right: 150px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  color: white;
+  background-color: #1e3d6a;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  font-weight: bold;
+  width: 150px;
+}
+
+h3 {
+  position: absolute;
+  top: 250px;
+  left: 600px;
+
+  color: white;
+  font-size: 25px;
+}
+
+.Caire {
+  font-size: 80px;
+}
+
+@media (max-width: 838px) {
+  .socialMedia li {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  nav ul {
+    flex-direction: column;
+    line-height: 2px;
+  }
+  .Vaccation {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+
+    color: white;
+  }
+  .femaleAbuSimbel {
+    width: 100vh;
+    height: 150vh;
+  }
+  .Lettering {
+    display: none;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}

@@ -1,7 +1,8 @@
 @import "../index.css";
 
 .nav {
-  margin-top: 30px;
+  padding: 60px 10px 0 10px;
+  margin-left: 5px;
   display: flex;
   justify-content: space-between;
 }

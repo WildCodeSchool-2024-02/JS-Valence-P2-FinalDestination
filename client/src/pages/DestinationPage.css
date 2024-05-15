@@ -1,34 +1,57 @@
 @import url("../index.css");
 
-.contenu {
+.plane {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 160px;
+  position: absolute;
+  left: 0;
+  height: 180px;
 }
 
 .picture {
   padding: 8px;
   border: 8px;
-
+  background-image: url("../assets/images/amsterdam.jpg");
+  width: 100px;
+  height: 120px;
   margin: 10px;
-
-  background-color: blue;
-  width: 150px;
-  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .picture h2 {
-  margin: 0;
+  margin-top: 32px;
+  color: white;
+  font-size: 1.2rem;
+}
 
-  text-align: center;
-}
-.airplaine {
-  position: absolute;
-  top: 3rem;
-  left: 0;
-  z-index: 100;
-}
-.text {
+.paragraphe {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
+  color: var(--primary-orange);
+  margin: 0 0 0 32px;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 0 0 0 64px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.title h1 {
+  background-color: var(--primary-orange);
+  color: white;
+  margin: 0;
+}
+.title h2 {
+  margin: 0;
+}
+h3 {
+  color: white;
 }

@@ -3,13 +3,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 :root {
-  --title-font: "Abril Fatface", serif;
-  --text-font: "Abhaya Libre", serif;
-  --btn-font: "Inter", sans-serif;
+  --title-font: "Abril Fatface";
+  --text-font: "Abhaya Libre";
+  --btn-font: "Inter";
 
   --primary-blue: #1e3d6a;
   --primary-orange: #d14408;
   --primary-dark: #302b2b;
   --primary-beige: #f0decc;
   --primary-purple: #665ec1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--text-font), serif;
+  font-style: normal;
+  height: 100dvh;
+  width: 100dvw;
 }

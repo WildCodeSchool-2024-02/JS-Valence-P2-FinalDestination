@@ -4,12 +4,14 @@ import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="container">
       <Navbar />
-      <main className="container">
-        <Outlet />
+      <main>
+        <div className="main_content">
+          <Outlet />
+        </div>
       </main>
-    </>
+    </div>
   );
 }
 

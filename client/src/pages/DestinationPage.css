@@ -1,4 +1,14 @@
 @import url("../index.css");
+
+body:has(.page_destination) {
+  background-image: url("../assets/images/Vector.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 0;
+  height: 100%;
+  background-size: cover;
+}
+
 .page_destination {
   display: flex;
   flex-direction: column;
@@ -52,12 +62,15 @@
 
 .card_container {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin-top: 32px;
+  gap: 15px;
+  row-gap: 0px;
+  justify-content: center;
+  max-width: 965px;
+  margin: 32px auto;
 }
-
-.title span {
+*/ .title span {
   background-color: var(--primary-orange);
   font-size: 3rem;
   color: white;
@@ -74,6 +87,27 @@
 h3 {
   color: white;
   text-align: center;
-  font-size: 28px;
+  font-size: 20px;
   z-index: 1000;
+}
+
+@media (max-width: 391px) {
+  .title {
+    align-items: flex-start;
+  }
+
+  .title span {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .picture {
+    width: 100px;
+    height: 160px;
+  }
+
+  .paragraphe {
+    font-size: 2rem;
+    text-align: center;
+  }
 }

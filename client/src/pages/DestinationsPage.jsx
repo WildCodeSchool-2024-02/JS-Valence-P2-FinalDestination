@@ -1,5 +1,4 @@
 import db from "../db";
-
 import "./DestinationPage.css";
 
 export default function DestinationsPage() {
@@ -10,7 +9,7 @@ export default function DestinationsPage() {
       </div> */}
       <div className="title">
         <h1 className="paragraphe">
-          We have brought together<span>the most visited</span>
+          We have brought together<span> the most visited</span>
         </h1>
         <h2> holiday routes for you!</h2>
       </div>

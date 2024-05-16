@@ -5,27 +5,27 @@ import Modal from "../components/Modal";
 function Questionnaire() {
   const [questions] = useState([
     {
-      id: 1,
+      id: "Type",
       question: "What type of activities do you plan to do during your stay ?",
       responses: ["Fun/Relaxation", "Cultural", "Gastronomy", "Nature"],
     },
     {
-      id: 2,
+      id: "Budget",
       question: "What’s your daily budget ?",
       responses: ["20$ - 50$", "50$ - 100$", "100$ - 300$", "+300$"],
     },
     {
-      id: 3,
+      id: "Season",
       question: "Which season do you prefer ?",
       responses: ["Winter", "Autumn", "Spring", "Summer"],
     },
     {
-      id: 4,
+      id: "Vehicle",
       question: "You’ll need to rent a vehicle ?",
       responses: ["Yes", "No"],
     },
     {
-      id: 5,
+      id: "Group",
       question: "How many people are you ?",
       responses: ["Alone", "Couple", "More than 2"],
     },
@@ -41,7 +41,6 @@ function Questionnaire() {
   const handleSubmit = () => {
     setShowModal(true);
   };
-
   const handleClose = () => {
     setShowModal(false);
   };

@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import styles from "./ErrorPage.module.css";
+import img404 from "../assets/images/page-not-found.png";
 
 export default function ErrorPage() {
-    return(
-        <>
-            <h1>Error 404</h1>
-            <Link to='/'>go back to home page</Link>
-        </>
-
-    )
+  return (
+    <div className={styles.errorPage}>
+      <img src={img404} alt="" />
+      <Link to="/">go back to home page</Link>
+    </div>
+  );
 }

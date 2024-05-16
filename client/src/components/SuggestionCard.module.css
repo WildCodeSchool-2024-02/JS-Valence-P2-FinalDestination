@@ -1,0 +1,69 @@
+@import url("../index.css");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+
+  h2 {
+    position: absolute;
+    text-shadow: rgba(39, 40, 41, 0.551) 2px 5px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Alfa slab one";
+    font-size: 300%;
+    color: white;
+    letter-spacing: 0.3rem;
+  }
+}
+
+.suggestionImg {
+  width: calc(100vw / 4);
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.suggestionCardButton {
+  font-family: var(--btn-font);
+  font-size: large;
+  font-weight: 600;
+  align-self: center;
+  width: 40%;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  background-color: #1e3d6a;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .suggestionImg {
+    width: 550px;
+    height: 400px;
+    margin: 0 20px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .suggestionCardButton {
+    position: absolute;
+    top: 94%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .suggestionImg {
+    width: calc(100vw - 50px);
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .suggestionCardButton {
+    position: absolute;
+    top: 94%;
+  }
+}

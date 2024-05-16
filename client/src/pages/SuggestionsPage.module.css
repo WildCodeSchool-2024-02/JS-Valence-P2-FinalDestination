@@ -1,0 +1,73 @@
+@import url("../index.css");
+
+body:has(.mainSuggestion) {
+  background-image: url(../assets/images/wave.png),
+    url(../assets/images/airplane.png);
+  background-repeat: no-repeat;
+  background-position: 95% 30%;
+}
+
+.mainSuggestion {
+  h1 {
+    position: relative;
+    margin: 100px 0 0 11%;
+    color: #d14408;
+    font-family: var(--text-font);
+    font-size: 40px;
+  }
+}
+
+.cardContainer {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  body:has(.mainSuggestion) {
+    background-image: url(../assets/images/wave.png);
+    background-position: bottom;
+  }
+
+  .mainSuggestion {
+    h1 {
+      text-align: center;
+      margin: 30px 0 0 0;
+      font-size: 35px;
+    }
+    .cardContainer {
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body:has(.mainSuggestion) {
+    background-image: none;
+  }
+
+  .mainSuggestion {
+    h1 {
+      text-align: center;
+      margin: 30px 0 0 0;
+      font-size: 35px;
+    }
+  }
+
+  .cardContainer {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}

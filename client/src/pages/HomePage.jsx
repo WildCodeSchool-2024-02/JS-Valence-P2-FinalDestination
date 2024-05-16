@@ -1,6 +1,7 @@
 import femaleAbuSimbel from "../assets/images/female-abu-simbel-temple-southern-egypt-lake-nasser.avif";
 import Lettering from "../assets/images/lettering.png";
 import "./Home.css";
+import Icons from "../assets/images/icons/icons8-menu-50.png";
 
 export default function HomePage() {
   return (
@@ -35,6 +36,9 @@ export default function HomePage() {
         <span className="Caire">CAIRE</span>
       </h3>
       <img src={femaleAbuSimbel} alt="abu-simbel" className="femaleAbuSimbel" />
+      <div id="icons">
+        <img src={Icons} alt="menu burger" />
+      </div>
     </div>
   );
 }

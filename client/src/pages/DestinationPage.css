@@ -1,57 +1,79 @@
 @import url("../index.css");
+.page_destination {
+  display: flex;
+  flex-direction: column;
+}
 
-.plane {
+/* .plane {
   display: flex;
   position: absolute;
   left: 0;
   height: 180px;
-}
+} */
 
 .picture {
   padding: 8px;
   border: 8px;
-  background-image: url("../assets/images/amsterdam.jpg");
-  width: 100px;
-  height: 120px;
+  background-size: cover;
+  background-position: center;
+  width: 140px;
+  height: 200px;
   margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
-.picture h2 {
-  margin-top: 32px;
-  color: white;
-  font-size: 1.2rem;
+
+.picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-color: #000;
+  z-index: 100;
 }
 
 .paragraphe {
-  display: flex;
-  justify-content: flex-end;
+  font-size: 1.8rem;
   color: var(--primary-orange);
-  margin: 0 0 0 32px;
+  margin-bottom: 0;
 }
 
 .title {
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
-  margin: 0 0 0 64px;
+  align-self: end;
+  align-items: center;
 }
 
-.container {
+.card_container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 32px;
 }
-.title h1 {
+
+.title span {
   background-color: var(--primary-orange);
+  font-size: 3rem;
   color: white;
   margin: 0;
+  padding: 0.3rem 2.5rem 0.3rem 1rem;
+  border-radius: 0.2rem 0 0 0.2rem;
 }
 .title h2 {
+  align-self: flex-end;
   margin: 0;
+  padding-right: 1.5rem;
+  font-size: 2.25rem;
 }
 h3 {
   color: white;
+  text-align: center;
+  font-size: 28px;
+  z-index: 1000;
 }

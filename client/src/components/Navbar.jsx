@@ -50,13 +50,28 @@ function Navbar() {
 
         <ul className={styles.navLinks}>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? styles.isActive : "")}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/destinations">Destinations</NavLink>
+            <NavLink
+              to="/destinations"
+              className={({ isActive }) => (isActive ? styles.isActive : "")}
+            >
+              Destinations
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">About us</NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? styles.isActive : "")}
+            >
+              About us
+            </NavLink>
           </li>
         </ul>
 

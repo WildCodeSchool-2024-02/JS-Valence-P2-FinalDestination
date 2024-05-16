@@ -1,0 +1,25 @@
+.container {
+  height: 100dvh;
+  width: 100dvw;
+}
+
+.main_content {
+  padding: 4rem 1rem;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+@media screen and (min-width: 600px) {
+  .main_content {
+    height: auto;
+    width: auto;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .main_content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

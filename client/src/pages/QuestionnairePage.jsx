@@ -65,6 +65,7 @@ function Questionnaire() {
                     value={response}
                     onChange={() => handleResponseChange(question.id, response)}
                     checked={answers[question.id] === response}
+                    style={{ marginRight: "8px" }}
                   />
                   {response}
                 </label>

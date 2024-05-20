@@ -1,4 +1,4 @@
-.modal-overlay {
+.modalOverlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@ form {
   justify-content: center;
   gap: 0.5em;
 }
-.modal-content {
+.modalContent {
   background-color: #665ec1;
   padding: 1.3em;
   border-radius: 1.5em;
@@ -55,7 +55,7 @@ h3 {
   padding: 0.5rem;
   width: 8em;
 }
-.close-button {
+.closeButton {
   position: absolute;
   border: outset;
   top: 10px;
@@ -66,7 +66,7 @@ h3 {
   color: #fff;
   width: 2em;
 }
-.close-button:hover {
+.closeButton:hover {
   color: rgba(40, 35, 35, 0.245);
   background-color: #cf4f33;
 }
@@ -75,7 +75,7 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
-  .modal-content {
+  .modalContent {
     padding: 1em;
     height: 14em;
     width: auto;
@@ -114,7 +114,7 @@ h3 {
     padding: 0.35rem;
     width: 6em;
   }
-  .close-button {
+  .closeButton {
     border-radius: 100%;
   }
 }

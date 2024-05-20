@@ -1,31 +1,31 @@
-import { useRef } from "react";
+import { useEffect } from "react";
 import "./Modal.css";
 import PropTypes from "prop-types";
 
 function Modal({ show, onClose, children }) {
-  const modalRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (show && event.target.classList.contains("modalOverlay")) {
+        onClose();
+      }
+    };
 
-  const handleBlur = (event) => {
-    if (!modalRef.current.contains(event.relatedTarget)) {
-      onClose();
-    }
-  };
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [show, onClose]);
 
   if (!show) {
     return null;
   }
 
   return (
-    <div
-      className="modal-overlay"
-      role="dialog"
-      aria-modal="true"
-      onBlur={handleBlur}
-      ref={modalRef}
-    >
-      <div className="modal-content">
+    <div className="modalOverlay" role="dialog" aria-modal="true">
+      <div className="modalContent">
         {children}
-        <button className="close-button" onClick={onClose} type="button">
+        <button className="closeButton" onClick={onClose} type="button">
           X
         </button>
       </div>

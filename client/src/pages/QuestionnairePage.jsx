@@ -12,7 +12,7 @@ function Questionnaire() {
     {
       id: "Budget",
       question: "What’s your daily budget ?",
-      responses: ["20$ - 50$", "50$ - 100$", "100$ - 300$", "+300$"],
+      responses: ["20$ - 50$", "50$ - 100$", "100$ - 200$", "+200$"],
     },
     {
       id: "Season",

@@ -3,10 +3,10 @@
     url(../assets/images/airplane.png);
   background-repeat: no-repeat;
   background-position:
-    25% 90%,
-    0% 10%;
+    0% 100%,
+    15% 25%;
 
-  background-size: 25%, 20%;
+  background-size: 30%, 20%;
 }
 .questionnaire {
   display: flex;

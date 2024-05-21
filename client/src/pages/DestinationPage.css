@@ -14,25 +14,19 @@ body:has(.page_destination) {
   flex-direction: column;
 }
 
-/* .plane {
-  display: flex;
-  position: absolute;
-  left: 0;
-  height: 180px;
-} */
-
 .picture {
   padding: 8px;
   border: 8px;
   background-size: cover;
   background-position: center;
-  width: 140px;
-  height: 200px;
-  margin: 10px;
+  width: 160px;
+  height: 210px;
+  margin: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  border-radius: 8px;
 }
 
 .picture::before {
@@ -82,13 +76,18 @@ body:has(.page_destination) {
   align-self: flex-end;
   margin: 0;
   padding-right: 1.5rem;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 h3 {
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   z-index: 1000;
+}
+h3:hover {
+  background-color: gold;
+  color: blue;
+  border-radius: 5px;
 }
 
 @media (max-width: 391px) {
@@ -97,17 +96,17 @@ h3 {
   }
 
   .title span {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
   .picture {
-    width: 100px;
+    width: 144px;
     height: 160px;
   }
 
   .paragraphe {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 }

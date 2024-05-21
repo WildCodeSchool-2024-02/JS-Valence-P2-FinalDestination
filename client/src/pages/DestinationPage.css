@@ -98,6 +98,7 @@ h3:hover {
   .title span {
     font-size: 1.8rem;
     text-align: center;
+    padding: 0rem;
   }
 
   .picture {

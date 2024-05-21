@@ -1,25 +1,27 @@
+main {
+  height: fit-content;
+  width: 100%;
+}
+
 .container {
   height: 100dvh;
   width: 100dvw;
 }
 
 .main_content {
-  padding: 4rem 1rem;
+  padding: 4rem 0 0 0;
   height: 100dvh;
   width: 100dvw;
 }
 
 @media screen and (min-width: 600px) {
-  .main_content {
-    height: auto;
-    width: auto;
-    padding: 0 1rem;
+  main {
+    height: 88dvh;
+    width: 100%;
   }
-}
-
-@media screen and (min-width: 800px) {
   .main_content {
-    max-width: 1200px;
-    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    padding: 0;
   }
 }

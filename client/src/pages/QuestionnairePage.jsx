@@ -77,26 +77,33 @@ function Questionnaire() {
           </button>
         </div>
 
-        <Modal show={showModal} onClose={handleClose}>
-          <div className="PopUp">
-            <h2 className="PopupTitle">Would you like to be informed?</h2>
-            <h3>
-              about our new plans <br /> please fill in to continue
-            </h3>
-            <form onSubmit={handleFormSubmit}>
-              <input className="Name" type="text" placeholder="Name" required />
-              <input
-                className="Email"
-                type="email"
-                placeholder="E-mail"
-                required
-              />
-              <button className="SubmitInfo" type="submit">
-                Continue
-              </button>
-            </form>
-          </div>
-        </Modal>
+        {showModal && (
+          <Modal show={showModal} onClose={handleClose}>
+            <div className="PopUp">
+              <h2 className="PopupTitle">Would you like to be informed?</h2>
+              <h3>
+                about our new plans <br /> please fill in to continue
+              </h3>
+              <form onSubmit={handleFormSubmit}>
+                <input
+                  className="Name"
+                  type="text"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  className="Email"
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                />
+                <button className="SubmitInfo" type="submit">
+                  Continue
+                </button>
+              </form>
+            </div>
+          </Modal>
+        )}
       </div>
     </div>
   );

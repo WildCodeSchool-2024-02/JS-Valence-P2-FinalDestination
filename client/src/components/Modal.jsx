@@ -17,19 +17,17 @@ function Modal({ show, onClose, children }) {
     };
   }, [show, onClose]);
 
-  if (!show) {
-    return null;
-  }
-
   return (
-    <div className="modalOverlay" role="dialog" aria-modal="true">
-      <div className="modalContent">
-        {children}
-        <button className="closeButton" onClick={onClose} type="button">
-          X
-        </button>
+    show && (
+      <div className="modalOverlay" role="dialog" aria-modal="true">
+        <div className="modalContent">
+          {children}
+          <button className="closeButton" onClick={onClose} type="button">
+            X
+          </button>
+        </div>
       </div>
-    </div>
+    )
   );
 }
 

@@ -64,7 +64,7 @@ body:has(.page_destination) {
   max-width: 965px;
   margin: 32px auto;
 }
-*/ .title span {
+.title span {
   background-color: var(--primary-orange);
   font-size: 3rem;
   color: white;

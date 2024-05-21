@@ -1,7 +1,7 @@
+import PropTypes from "prop-types";
 import styles from "./SuggestionCard.module.css";
 
-export default function SuggestionCard(description) {
-  const { img, name } = description;
+function SuggestionCard({ img, name }) {
   return (
     <div className={styles.card}>
       <img className={styles.suggestionImg} src={img} alt={name} />
@@ -12,3 +12,10 @@ export default function SuggestionCard(description) {
     </div>
   );
 }
+
+SuggestionCard.propTypes = {
+  img: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
+
+export default SuggestionCard;

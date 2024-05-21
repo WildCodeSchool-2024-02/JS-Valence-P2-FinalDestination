@@ -1,4 +1,4 @@
-import femaleAbuSimbel from "../assets/images/female-abu-simbel-temple-southern-egypt-lake-nasser.avif";
+import FemaleAbuSimbel from "../assets/images/female-abu-simbel-temple-southern-egypt-lake-nasser.avif";
 import Lettering from "../assets/images/lettering.png";
 import "./HomePage.css";
 
@@ -34,7 +34,7 @@ export default function HomePage() {
         <br />
         <span className="Caire">CAIRE</span>
       </h3>
-      <img src={femaleAbuSimbel} alt="abu-simbel" className="femaleAbuSimbel" />
+      <img src={FemaleAbuSimbel} alt="abu-simbel" className="FemaleAbuSimbel" />
     </div>
   );
 }

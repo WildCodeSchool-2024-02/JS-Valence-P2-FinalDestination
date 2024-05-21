@@ -10,9 +10,11 @@
   align-items: center;
   gap: 20px;
   background-image: url("../assets/images/Vector.png");
-  background-position: initial;
+  background-position: inherit;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  height: 83dvh;
 }
 
 .Lettering {
@@ -77,40 +79,6 @@ h3 {
 }
 
 @media (max-width: 838px) {
-  .socialMedia li {
-    display: none;
-  }
-  nav {
-    position: absolute;
-    top: 5px;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-  }
-  nav ul {
-    flex-direction: column;
-    line-height: 2px;
-  }
-  nav > a > img {
-    position: absolute;
-    top: 100px;
-    left: 120px;
-  }
-  #icons {
-    position: absolute;
-    top: 50px;
-    right: 5px;
-    display: block;
-  }
-  #icons :before {
-    content: "\2630";
-  }
-  nav ul {
-    position: fixed;
-    left: -100%;
-    top: 5%;
-    flex-direction: column;
-  }
   .Vaccation {
     margin-left: 20px;
     color: white;
@@ -128,6 +96,8 @@ h3 {
     background-position: 100%;
     background-repeat: no-repeat;
     padding-bottom: 50px;
+    height: 100%;
+    width: 100%;
   }
   .Lettering {
     display: none;

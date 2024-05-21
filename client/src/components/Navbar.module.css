@@ -1,22 +1,114 @@
 @import "../index.css";
 
+.navModalOpen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-beige);
+  height: 100dvh;
+  width: 100dvw;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navModalClose {
+  display: none;
+}
+
+.navModalOpen ul,
+.navModalClose ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navModalOpen a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.navModalOpen a:hover {
+  opacity: 0.8;
+}
+
 .nav {
   padding: 60px 10px 0 10px;
   margin-left: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-.nav ul,
-a {
+.nav ul {
   list-style-type: none;
-  text-decoration: none;
   display: flex;
   gap: 20px;
+}
+
+.nav li a {
+  font-weight: 500;
+  text-decoration: none;
   color: var(--primary-dark);
+  font-size: 1.125rem;
+}
+
+.navLinks a {
+  opacity: 0.8;
+}
+
+.navLinks > li > .isActive {
+  opacity: 1;
+  font-weight: 600;
 }
 
 .logo {
   width: 150px;
   height: auto;
+}
+
+.socials > li > a:hover {
+  opacity: 0.8;
+}
+
+.menu {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav > a > img {
+    height: 40px;
+    width: auto;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    z-index: 10;
+  }
 }

@@ -7,20 +7,18 @@ body:has(.mainSuggestion) {
   background-position: 95% 30%;
 }
 
-.mainSuggestion {
-  h1 {
-    position: relative;
-    margin: 100px 0 0 11%;
-    color: #d14408;
-    font-family: var(--text-font);
-    font-size: 40px;
-  }
+.mainSuggestion h1 {
+  text-align: center;
+  margin-top: 90px;
+  color: #d14408;
+  font-family: var(--text-font);
+  font-size: 50px;
 }
 
 .cardContainer {
   position: relative;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -28,19 +26,18 @@ body:has(.mainSuggestion) {
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
   body:has(.mainSuggestion) {
-    background-image: url(../assets/images/wave.png);
-    background-position: bottom;
+    background-image: none;
   }
 
   .mainSuggestion {
     h1 {
       text-align: center;
-      margin: 30px 0 0 0;
+      margin-top: 30px;
       font-size: 35px;
     }
     .cardContainer {
       width: 100%;
-      margin-top: 10px;
+      margin-top: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -54,12 +51,10 @@ body:has(.mainSuggestion) {
     background-image: none;
   }
 
-  .mainSuggestion {
-    h1 {
-      text-align: center;
-      margin: 30px 0 0 0;
-      font-size: 35px;
-    }
+  .mainSuggestion h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
   }
 
   .cardContainer {

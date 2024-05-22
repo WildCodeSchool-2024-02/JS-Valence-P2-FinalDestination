@@ -19,6 +19,10 @@
   text-align: center;
 }
 
+.activity p {
+  font-size: 0.8rem;
+}
+
 .activity > div {
   background: #fff;
   padding: 1rem;
@@ -27,10 +31,16 @@
   position: relative;
 }
 
-.activity div > div {
+.activity div > div:first-of-type {
   width: 100%;
   height: 150px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.activity div > div:last-of-type {
+  overflow: scroll;
+  max-height: 40px;
+  min-height: 40px;
 }
 
 .activity div > img {
@@ -38,7 +48,8 @@
   height: 100%;
 }
 
-.activity div > button {
+.activity div > .button {
+  text-decoration: none;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -49,4 +60,5 @@
   border-radius: 0.5rem;
   background-color: var(--primary-blue);
   font-family: var(--btn-font);
+  font-size: 0.825rem;
 }

@@ -82,7 +82,7 @@ const destinations = [
   },
   {
     id: 10,
-    name: "Bali",
+    name: "Pulau Bali",
     description:
       "Bali, known as the Island of the Gods, captivates with its breathtaking landscapes, from lush rice terraces to pristine beaches kissed by turquoise waters. This Indonesian paradise exudes a mystical charm, with ornate temples nestled amidst verdant jungles and traditional villages alive with vibrant culture. Immerse yourself in the rhythmic beat of Balinese gamelan music, indulge in mouthwatering cuisine, or simply relax in a tranquil yoga retreat overlooking serene rice paddies.",
     budget: [69, 74],

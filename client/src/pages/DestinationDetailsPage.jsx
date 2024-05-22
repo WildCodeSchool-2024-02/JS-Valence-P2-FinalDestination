@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Activity from "../components/Activity";
-import "./DestinationDetailsPage.css";
+import styles from "./DestinationDetailsPage.module.css";
 
 export default function DestinationDetailsPage() {
   const currentDestination = useLoaderData();
@@ -76,26 +76,26 @@ export default function DestinationDetailsPage() {
 
   return (
     <div
-      className="destination background_img"
+      className={styles.destination}
       style={{
         background: currentDestination
           ? `url(${currentDestination.img}) center/cover`
           : "",
       }}
     >
-      <section className="text_content">
-        <div className="wrapper">
-          <div className="title">
+      <section className={styles.text_content}>
+        <div className={styles.wrapper}>
+          <div className={styles.title}>
             <h1>{currentDestination?.name}</h1>
             <h2>${currentDestination?.budget[0]}/day</h2>
           </div>
-          <div className="description">
+          <div className={styles.description}>
             <p>{currentDestination?.description}</p>
           </div>
         </div>
       </section>
       <div>
-        <div className="wrapper">
+        <div className={styles.wrapper}>
           <Activity activity="Cultural" data={dataCulturalPlace} />
           <Activity activity="Fun" data={dataFunPlace} />
           <Activity activity="Restaurant" data={dataRestoPlace} />

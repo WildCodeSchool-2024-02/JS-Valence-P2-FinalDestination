@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import PropType from "prop-types";
-import styles from "./Activity.module.css";
 import cultural from "../assets/images/activities/muse.avif";
 import fun from "../assets/images/activities/fun.avif";
 import restaurant from "../assets/images/activities/restaurant.avif";
+import styles from "./Activity.module.css";
 
 export default function Activity({ activity, data }) {
   function handleImage() {
@@ -39,10 +39,10 @@ export default function Activity({ activity, data }) {
 
 Activity.propTypes = {
   activity: PropType.string,
-  data: PropType.any,
+  data: PropType.object,
 };
 
 Activity.defaultProps = {
   activity: PropType.string,
-  data: PropType.shape,
+  data: PropType.object,
 };

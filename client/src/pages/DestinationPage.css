@@ -27,6 +27,7 @@ body:has(.page_destination) {
   justify-content: center;
   position: relative;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .picture::before {

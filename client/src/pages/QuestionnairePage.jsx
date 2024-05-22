@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
 import "./QuestionnairePage.css";
 import Modal from "../components/Modal";
@@ -38,8 +38,6 @@ function QuestionnairePage() {
   const [showModal, setShowModal] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
-
-  useEffect(() => {}, [answers]);
 
   const handleResponseChange = (event, questionId) => {
     setAnswers((oldAnswers) => ({

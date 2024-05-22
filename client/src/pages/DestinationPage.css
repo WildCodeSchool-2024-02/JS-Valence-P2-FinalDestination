@@ -1,64 +1,114 @@
 @import url("../index.css");
 
-.destination {
+body:has(.page_destination) {
+  background-image: url("../assets/images/Vector.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 0;
   height: 100%;
-  width: 100%;
-  padding: 2rem 0 0 0;
-  overflow: hidden;
-  overflow-y: scroll;
+  background-size: cover;
 }
 
-.text_content {
-  background: rgb(255, 255, 255, 0.7);
-  color: var(--primary-blue);
-  margin-bottom: 2rem;
-  padding: 2rem 0;
+.page_destination {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture {
+  padding: 8px;
+  border: 8px;
+  background-size: cover;
+  background-position: center;
+  width: 160px;
+  height: 210px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-color: #000;
+  z-index: 100;
+}
+
+.paragraphe {
+  font-size: 1.8rem;
+  color: var(--primary-orange);
+  margin-bottom: 0;
 }
 
 .title {
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  align-items: center;
 }
 
-.wrapper {
-  padding: 0 1rem;
+.card_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  row-gap: 0px;
+  justify-content: center;
+  max-width: 965px;
+  margin: 32px auto;
+}
+.title span {
+  background-color: var(--primary-orange);
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  padding: 0.3rem 2.5rem 0.3rem 1rem;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+.title h2 {
+  align-self: flex-end;
+  margin: 0;
+  padding-right: 1.5rem;
+  font-size: 2rem;
+}
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  z-index: 1000;
+}
+h3:hover {
+  color: gold;
+
+  cursor: pointer;
 }
 
-.destination > div p {
-  padding: 0.5rem 0;
-}
-
-@media screen and (min-width: 600px) {
-  .text_content > .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
+@media (max-width: 391px) {
+  .title {
+    align-items: flex-start;
   }
 
-  .title h1 {
-    font-size: 5rem;
+  .title span {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0rem;
   }
 
-  .title h2 {
-    font-size: 2.5rem;
+  .picture {
+    width: 144px;
+    height: 160px;
   }
 
-  .description {
-    width: 50%;
-  }
-
-  .destination > div {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-
-  .destination > div > .wrapper {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: end;
-    justify-content: center;
-    padding-top: 4rem;
+  .paragraphe {
+    font-size: 1.8rem;
+    text-align: center;
   }
 }

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Activity from "../components/Activity";
-import "./DestinationPage.css";
+import "./DestinationDetailsPage.css";
 
-export default function DestinationPage() {
+export default function DestinationDetailsPage() {
   const currentDestination = useLoaderData();
 
   const [dataGeo, setDataGeo] = useState();

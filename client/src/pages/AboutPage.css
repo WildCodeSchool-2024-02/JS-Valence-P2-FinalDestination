@@ -1,0 +1,15 @@
+@import "../index.css";
+.About h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1e3d6a;
+}
+.About {
+  padding-top: 50px;
+}
+.About p {
+  margin-top: 60px;
+  margin-left: 150px;
+  flex-direction: column;
+}

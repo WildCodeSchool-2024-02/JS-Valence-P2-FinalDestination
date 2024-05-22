@@ -28,10 +28,7 @@ export default function HomePage() {
 
       <h3>
         The most preferred
-        <br />
         <br /> cultural route of 2023
-        <br />
-        <br />
         <span className="Caire">CAIRE</span>
       </h3>
       <img src={FemaleAbuSimbel} alt="abu-simbel" className="FemaleAbuSimbel" />

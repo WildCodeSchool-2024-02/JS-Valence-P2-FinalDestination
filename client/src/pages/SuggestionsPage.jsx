@@ -1,3 +1,4 @@
+// import { useOutletContext } from "react-router-dom";
 import SuggestionCard from "../components/SuggestionCard";
 import styles from "./SuggestionsPage.module.css";
 import db from "../db";

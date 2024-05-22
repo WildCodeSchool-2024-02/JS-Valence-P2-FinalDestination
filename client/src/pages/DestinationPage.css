@@ -85,9 +85,9 @@ h3 {
   z-index: 1000;
 }
 h3:hover {
-  background-color: gold;
-  color: blue;
-  border-radius: 5px;
+  color: gold;
+
+  cursor: pointer;
 }
 
 @media (max-width: 391px) {

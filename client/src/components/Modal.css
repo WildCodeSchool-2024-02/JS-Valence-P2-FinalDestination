@@ -1,0 +1,120 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+form {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+}
+.modalContent {
+  background-color: #665ec1;
+  padding: 1.3em;
+  border-radius: 1.5em;
+  position: relative;
+  max-width: auto;
+  width: 65%;
+}
+h3 {
+  font-size: 1.8rem;
+  padding: 0.5em;
+  color: white;
+  text-align: center;
+}
+
+.PopupTitle {
+  text-align: center;
+  color: red;
+  font-size: 2rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.Name {
+  padding: 0.5rem;
+  width: 10em;
+}
+
+.Email {
+  padding: 0.5rem;
+  width: 15em;
+}
+.Submit {
+  padding: 0.5rem;
+  width: 8em;
+}
+.closeButton {
+  position: absolute;
+  border: outset;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: #cf4f33;
+  color: #fff;
+  width: 2em;
+}
+.closeButton:hover {
+  color: rgba(40, 35, 35, 0.245);
+  background-color: #cf4f33;
+}
+.PopupCall {
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 600px) {
+  .modalContent {
+    padding: 1em;
+    height: 14em;
+    width: auto;
+    display: flex;
+    justify-items: center;
+  }
+  .PopupTitle {
+    font-size: 1rem;
+    padding: 0.5rem 0.7rem 0.5rem 0.5rem;
+    margin-top: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+    padding: 0.5em;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+  }
+  .PopupCall {
+    font-size: 1rem;
+    margin-top: 0rem;
+  }
+  .Name {
+    padding: 0.2rem;
+    width: 8em;
+  }
+  .Email {
+    padding: 0.2rem;
+    width: 13em;
+  }
+  .Submit {
+    display: flex;
+    justify-content: center;
+    padding: 0.35rem;
+    width: 6em;
+  }
+  .closeButton {
+    border-radius: 100%;
+  }
+}

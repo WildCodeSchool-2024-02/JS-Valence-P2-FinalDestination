@@ -67,7 +67,7 @@ body:has(.page_destination) {
 }
 .title span {
   background-color: var(--primary-orange);
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   margin: 0;
   padding: 0.3rem 2.5rem 0.3rem 1rem;

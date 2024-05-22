@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import db from "../db";
 import "./DestinationPage.css";
 
-export default function DestinationPage() {
+export default function DestinationsPage() {
   const navigate = useNavigate();
   return (
     <div className="page_destination">

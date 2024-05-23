@@ -1,0 +1,114 @@
+@import url("../index.css");
+
+body:has(.page_destination) {
+  background-image: url("../assets/images/Vector.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin: 0;
+  height: 100%;
+  background-size: cover;
+}
+
+.page_destination {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture {
+  padding: 8px;
+  border: 8px;
+  background-size: cover;
+  background-position: center;
+  width: 160px;
+  height: 210px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-color: #000;
+  z-index: 100;
+}
+
+.paragraphe {
+  font-size: 1.8rem;
+  color: var(--primary-orange);
+  margin-bottom: 0;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  align-items: center;
+}
+
+.card_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  row-gap: 0px;
+  justify-content: center;
+  max-width: 965px;
+  margin: 32px auto;
+}
+.title span {
+  background-color: var(--primary-orange);
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+  padding: 0.3rem 2.5rem 0.3rem 1rem;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+.title h2 {
+  align-self: flex-end;
+  margin: 0;
+  padding-right: 1.5rem;
+  font-size: 2rem;
+}
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  z-index: 1000;
+}
+h3:hover {
+  color: gold;
+
+  cursor: pointer;
+}
+
+@media (max-width: 391px) {
+  .title {
+    align-items: flex-start;
+  }
+
+  .title span {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0rem;
+  }
+
+  .picture {
+    width: 144px;
+    height: 160px;
+  }
+
+  .paragraphe {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}

@@ -1,8 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import FemaleAbuSimbel from "../assets/images/female-abu-simbel-temple-southern-egypt-lake-nasser.avif";
 import Lettering from "../assets/images/lettering.png";
+
 import "./HomePage.css";
 
 export default function HomePage() {
+  const navigate = useNavigate();
+  const goToSurvey = () => {
+    navigate("/survey");
+  };
   return (
     <div className="Homepage">
       <div className="Vaccation">
@@ -21,7 +27,9 @@ export default function HomePage() {
           <br />
           to know !<br />
         </h2>
-        <button type="submit">START QUIZ</button>
+        <button onClick={goToSurvey} type="submit">
+          START QUIZ
+        </button>
       </div>
       <img src={FemaleAbuSimbel} alt="abu-simbel" className="FemaleAbuSimbel" />
     </div>

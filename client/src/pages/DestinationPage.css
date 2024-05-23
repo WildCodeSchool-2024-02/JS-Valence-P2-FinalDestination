@@ -79,13 +79,13 @@ body:has(.page_destination) {
   padding-right: 1.5rem;
   font-size: 2rem;
 }
-h3 {
+.page_destination h3 {
   color: white;
   text-align: center;
   font-size: 24px;
   z-index: 1000;
 }
-h3:hover {
+.page_destination h3:hover {
   color: gold;
 
   cursor: pointer;

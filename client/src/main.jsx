@@ -10,6 +10,7 @@ import DestinationsPage from "./pages/DestinationsPage";
 import DestinationDetailsPage from "./pages/DestinationDetailsPage";
 import ErrorPage from "./pages/ErrorPage";
 import SuggestionsPage from "./pages/SuggestionsPage";
+
 import QuestionnairePage from "./pages/QuestionnairePage";
 
 function getCurrentDetails(id, arr) {

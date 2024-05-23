@@ -1,0 +1,81 @@
+@import "../index.css";
+.About h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1e3d6a;
+}
+.About {
+  padding-top: 50px;
+}
+.About p {
+  display: flex;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Formulaire {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dfb790;
+
+  padding: 30px;
+}
+.formulaire p {
+  display: block;
+  padding-right: 150px;
+}
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+input {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.Doyou {
+  padding-right: 20px;
+}
+.Contact {
+  display: flex;
+  gap: 5px;
+}
+.Marge {
+  border-right: 1px solid black;
+  height: 200px;
+}
+input {
+  padding: 5px;
+}
+button {
+  margin-top: 15px;
+  background-color: #1e3d6a;
+  color: white;
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+
+  border: none;
+}
+@media (max-width: 970px) {
+  .Formulaire {
+    display: block;
+    text-align: center;
+  }
+  .Marge {
+    border: none;
+  }
+  .Contact {
+    width: auto;
+  }
+}

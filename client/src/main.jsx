@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import AboutPage from "./pages/AboutPage";
 import App from "./App";
 import HomePage from "./pages/HomePage";
 import DestinationsPage from "./pages/DestinationsPage";
 import ErrorPage from "./pages/ErrorPage";
 import SuggestionsPage from "./pages/SuggestionsPage";
+
 import QuestionnairePage from "./pages/QuestionnairePage";
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/suggestions",
         element: <SuggestionsPage />,
+      },
+      {
+        path: "/contact",
+        element: <AboutPage />,
       },
     ],
   },

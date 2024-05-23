@@ -18,10 +18,40 @@ body:has(.mainSuggestion) {
 .cardContainer {
   position: relative;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.noSuggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.noSuggestionText {
+  text-align: center;
+  color: #292626;
+  margin: 20px 0;
+  font-family: var(--text-font);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.destinationsLink {
+  text-decoration: none;
+  width: fit-content;
+  font-family: var(--btn-font);
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  background-color: #1e3d6a;
+  color: white;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {

@@ -9,12 +9,12 @@ function QuestionnairePage() {
     {
       id: "Type",
       question: "What type of activities do you plan to do during your stay?",
-      responses: ["Fun/Relaxation", "Cultural", "Gastronomy", "Nature"],
+      responses: ["Fun", "Cultural", "Gastronomy", "Relaxation"],
     },
     {
       id: "Budget",
       question: "What’s your daily budget?",
-      responses: ["20$ - 50$", "50$ - 100$", "100$ - 300$", "+300$"],
+      responses: ["50$ - 100$", "100$ - 150$", "150$ - 200$", "200$ - 300$"],
     },
     {
       id: "Season",
@@ -33,7 +33,7 @@ function QuestionnairePage() {
     },
   ]);
 
-  const [setFormData] = useOutletContext();
+  const [, setFormData] = useOutletContext();
   const [answers, setAnswers] = useState({});
   const [showModal, setShowModal] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");

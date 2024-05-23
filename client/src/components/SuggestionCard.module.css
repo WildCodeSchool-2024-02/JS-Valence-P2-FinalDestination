@@ -28,12 +28,13 @@
   border-radius: 20px;
 }
 
-.suggestionCardButton {
+.suggestionCardLink {
+  text-decoration: none;
+  width: fit-content;
   font-family: var(--btn-font);
   font-size: large;
   font-weight: 600;
   align-self: center;
-  width: 40%;
   border-radius: 10px;
   border: none;
   padding: 10px;
@@ -50,7 +51,7 @@
     object-fit: cover;
     border-radius: 20px;
   }
-  .suggestionCardButton {
+  .suggestionCardLink {
     position: absolute;
     top: 94%;
   }
@@ -62,7 +63,7 @@
     object-fit: cover;
     border-radius: 20px;
   }
-  .suggestionCardButton {
+  .suggestionCardLink {
     position: absolute;
     top: 94%;
   }

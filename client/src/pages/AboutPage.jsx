@@ -27,7 +27,7 @@ export default function AboutPage() {
               placeholder="Please write your message in this area"
               rows="5"
               cols="10"
-            />{" "}
+            />
             <br />
             <div className="Contact">
               <input type="text" placeholder="Name" />

@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AboutPage from "./pages/AboutPage";
 import db from "./db";
 
 import App from "./App";
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/suggestions",
         element: <SuggestionsPage />,
+      },
+      {
+        path: "/contact",
+        element: <AboutPage />,
       },
     ],
   },

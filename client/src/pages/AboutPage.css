@@ -9,7 +9,90 @@
   padding-top: 50px;
 }
 .About p {
+  display: flex;
   margin-top: 60px;
-  margin-left: 150px;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  font-size: 16px;
+}
+.Formulaire {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #dfb790;
+
+  padding: 30px;
+}
+.formulaire p {
+  display: block;
+  padding-right: 150px;
+}
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  height: 7rem;
+  width: 26rem;
+}
+input {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.Doyou {
+  padding-right: 20px;
+  font-size: 16px;
+}
+.Contact {
+  display: flex;
+  gap: 5px;
+}
+.Marge {
+  border-right: 1px solid black;
+  height: 200px;
+}
+input {
+  padding: 5px;
+  height: 2rem;
+}
+button {
+  margin-top: 10px;
+  background-color: #1e3d6a;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  height: 2rem;
+  width: 2rem;
+}
+@media (max-width: 970px) {
+  .Formulaire {
+    display: block;
+    text-align: center;
+  }
+  .Marge {
+    border: none;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+  .Contact {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    width: 17.7rem;
+
+    margin-top: 60px;
+    margin-left: 100px;
+    flex-direction: column;
+  }
 }

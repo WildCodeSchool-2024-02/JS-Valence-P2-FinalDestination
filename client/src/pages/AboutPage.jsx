@@ -15,17 +15,27 @@ export default function AboutPage() {
           efficient, and stress-free.
         </p>
       </div>
-      <div>
-        <h2>Do you have a question?</h2>
-        <p>we are going to answer as quick as possible!</p>
+      <div className="Formulaire">
+        <span className="Doyou">
+          <h2>Do you have a question?</h2>
+          <p>we are going to answer as quick as possible!</p>
+        </span>
+
         <form action="post">
-          <input
-            type="text"
-            placeholder="please write your message in this area"
-          />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="e-mail" />
-          <button type="button">Send</button>
+          <div className="Champs">
+            <textarea
+              placeholder="Please write your message in this area"
+              rows="5"
+              cols="10"
+            />
+            <br />
+            <div className="Contact">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="e-mail" />
+
+              <button type="button">Send</button>
+            </div>
+          </div>
         </form>
       </div>
     </>

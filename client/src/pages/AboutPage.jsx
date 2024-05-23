@@ -24,7 +24,7 @@ export default function AboutPage() {
         <form action="post">
           <div className="Champs">
             <textarea
-              placeholder="please write your message in this area"
+              placeholder="Please write your message in this area"
               rows="5"
               cols="10"
             />{" "}
